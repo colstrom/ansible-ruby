@@ -20,3 +20,4 @@
     pkg: "{{ item }}"
   with_items:
     - ruby2.1
+    - ruby2.1-dev
