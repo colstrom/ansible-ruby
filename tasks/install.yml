@@ -1,19 +1,4 @@
 ---
-- name: Import Signing Key | ~brightbox
-  apt_key:
-    state: present
-    keyserver: 'hkp://keyserver.ubuntu.com:80'
-    id: '0xf5da5f09c3173aa6'
-
-- name: Import Repository | ~brightbox/ruby-ng
-  apt_repository:
-    state: present
-    repo: 'deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main'
-  notify: Update Package Cache
-
-- name: Trigger All Callbacks
-  meta: flush_handlers
-
 - name: Install Packages | apt
   apt:
     state: latest
