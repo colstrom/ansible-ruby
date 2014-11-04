@@ -6,3 +6,10 @@
   with_items:
     - ruby2.1
     - ruby2.1-dev
+
+- name: Install Packages | gem
+  gem:
+    state: latest
+    name: "{{ item }}"
+    user_install: no
+  with_items: ruby_gems
