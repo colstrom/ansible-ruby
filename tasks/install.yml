@@ -7,6 +7,12 @@
     - ruby2.2
     - ruby2.2-dev
 
+- name: Install Packages | bundler
+  gem:
+    state: latest
+    name: bundler
+    user_install: no
+
 - name: Install Packages | gem
   gem:
     state: latest
