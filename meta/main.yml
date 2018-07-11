@@ -1,8 +1,8 @@
 ---
-dependencies:
-  - role: colstrom.apt-repository
-    repository_key: "0xf5da5f09c3173aa6"
-    repository_url: "deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu {{ ansible_distribution_release }} main"
+dependencies: []
+    #  - role: colstrom.apt-repository
+    #repository_key: "0xf5da5f09c3173aa6"
+    #repository_url: "deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu {{ ansible_distribution_release }} main"
 galaxy_info:
   author: "Chris Olstrom"
   categories:
