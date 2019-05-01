@@ -1,0 +1,7 @@
+---
+- name: Add ruby repository ppa
+  apt_repository:
+    validate_certs: no
+    repo: 'ppa:brightbox/ruby-ng'
+    state: present
+    update_cache: yes

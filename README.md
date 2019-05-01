@@ -17,6 +17,7 @@ Example Playbook
     - hosts: servers
       roles:
          - role: colstrom.ruby
+           version: 2.3
            ruby_gems:
              - ezmq
              - rbnacl

@@ -4,8 +4,8 @@
     state: latest
     pkg: "{{ item }}"
   with_items:
-    - ruby2.3
-    - ruby2.3-dev
+    - "ruby{{ version | string }}"
+    - "ruby{{ version | string }}-dev"
 
 - name: Install Packages | bundler
   gem:
